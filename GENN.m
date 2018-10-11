@@ -124,3 +124,9 @@ end % while
 
 % The weight matrixes can be used for prediction.
 save ('general_NN','WM1', 'WM2')
+
+function [val] = act_fun(sum)
+
+% val = 2/(1 + exp(-2*sum)) - 1;
+
+val = 1/(1 + exp(-sum));
